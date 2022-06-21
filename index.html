@@ -7,7 +7,15 @@
         <title>Tablas GIT</title>
         <style>
             .table-3{
-                width: 180px
+                width: 180px;
+             
+            }
+            .table-4{
+                height: 190px;
+                
+            }
+            .table-4 tr {
+                height: 30px;
             }
         </style>
     </head>
@@ -105,6 +113,31 @@
                     <td colspan="3">Combinada 2</td>
                 </tr>
             </tbody>
+        </table>
+        <br>
+
+        <h2> Tabla 4: Rowspan</h2>
+        <hr>
+        
+        <table border="1" class="table-4">
+            
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">Uno</td>
+                    <td colspan="5">Dos</td>
+                    
+                </tr>
+                <tr>
+                  
+                    <td colspan="2" rowspan="2">Burrooooo</td>
+                    <td colspan="2"rowspan="2">Pajaroooo</td>
+                    <td rowspan="2">Moto</td>
+                </tr>
+                <tr>
+                    <td>Azul</td>
+                </tr>
+          </tbody>
         </table>
     </body>
 </html>
