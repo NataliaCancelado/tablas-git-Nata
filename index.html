@@ -1,79 +1,110 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Tablas GIT</title>
-        </head>
-        <body>
-            <h1>Tablas en HTML</h1>
-            <br>
-            <h2>Tabla 1: Encabezado Horizontal</h2>
-            <hr>
-             <table border="1">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tablas GIT</title>
+        <style>
+            .table-3{
+                width: 180px
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tablas en HTML</h1>
+        <br>
+
+        <h2>Tabla 1: Encabezado Horizontal</h2>
+        <hr>
+
+        <table border="1">
             <thead> 
-                 <tr>
+                <tr>
                     <th>Nombre</th>
                     <th>Edad</th>
                     <th>Pais</th>
                 </tr>
             </thead>
             <tbody>
-                 <tr>
+                    <tr>
                     <td>Natalia</td>
                     <td>25</td>
                     <td>Colombia</td>
-
-                 </tr>
+                </tr>
+                
+                <tr>
                     <td>Luis</td>
                     <td>27</td>
                     <td>Brasil</td>
-                <tr>
-
-                        
                 </tr>
-
             </tbody>
         </table>
         <br>
+
         <h2> Tabla 2: Encabezado Vertical</h2>
         <hr>
 
         <table border="1">
-             <tbody>
-                 <tr>
-                     <th>NOMBRE</th>
-                     <td>NATA</td>
-                     <td>GERAL</td>
-                     <td>FERNANDO</td>
-                     <td>LUIS</td>
-                     <td>ANDRES</td>
-                     
-                 </tr>
-                 <tr>
+            <tbody>
+                <tr>
+                    <th>NOMBRE</th>
+                    <td>NATA</td>
+                    <td>GERAL</td>
+                    <td>FERNANDO</td>
+                    <td>LUIS</td>
+                    <td>ANDRES</td>
+                    
+                </tr>
+            
+                <tr>
                     <th>EDAD</th>
                     <td>25</td>
                     <td>24</td>
                     <td>27</td>
                     <td>26</td>
                     <td>22</td>
-                 </tr>
-                 <tr>
+                </tr>
+
+                <tr>
                     <th>PAIS</th>
                     <td>COLOMBIA</td>
                     <td>ITALIA</td>
                     <td>BRASIL</td>
                     <td>FRANCIA</td>
                     <td>AFRICA</td>
-                 </tr>
-
-
-
-
+                </tr>
             </tbody>
-        
-        
+        </table>
+        <br>
+    
+        <h2>Tabla 3: Colspan</h2>
+        <hr>
+
+        <table border="1" class="table-3">
+            <thead>
+                <tr>
+                    <th colspan="6">Titulo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="6">Primera fila</td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2">Combinada 1</td>
+                    <td colspan="2">Combinada 2</td>
+                    <td>Simple 3</td>
+                    <td>Simple 4</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">Combinada 1</td>
+                    <td colspan="3">Combinada 2</td>
+                </tr>
+            </tbody>
         </table>
     </body>
 </html>
